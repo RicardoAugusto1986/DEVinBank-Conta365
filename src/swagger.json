@@ -1,0 +1,207 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "DevInBank",
+    "description": "descrição",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3333",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/v1/userCreate": {
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "description": "Endpoint que cria usuario, nescessario inserir name, email.",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "Ricardo"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "ricardo@.com.br"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/v1/userUpdate/{id}": {
+      "patch": {
+        "tags": [
+          "Usuarios"
+        ],
+        "description": "Endpoint pra buscar usuarios cadastrados atravez do seu id.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "Ricardo"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "ricardo@.com.br"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/v1/user/{id}": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "description": "Retorna o usuario atravez do seu id.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/v1/allUser": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "description": "Retorna toda a lista de usuários.",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/v1/deleteFinance/{userId}/{financialId}": {
+      "delete": {
+        "tags": [
+          "Dados Financeiros"
+        ],
+        "description": "Metodo pra deletar uma transação do usuario atravez do id da transação, nescessario colocar o id do usuario, e id da transação que quer deletar.",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "financialId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/v1/FinanciallData": {
+      "get": {
+        "tags": [
+          "Dados Financeiros"
+        ],
+        "description": "Endpoint que traz o json com as contas e despesas de todos os usuarios",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/v1/userFinanciallData/{userId}": {
+      "post": {
+        "tags": [
+          "Dados Financeiros"
+        ],
+        "description": "Endpoint que registra dados de um arquivo .xlsx.",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "file",
+            "in": "formData",
+            "type": "file",
+            "required": true,
+            "description": "Insira o arquivo chamado financial"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    }
+  }
+}

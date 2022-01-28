@@ -1,0 +1,43 @@
+DEVinBank
+ criação de endpoint 
+
+ Passos pra rodar os endpoints
+ 1: Iniciar com o comando no terminal:  npm run swagger
+ 2: iniciar o projeto atravez do comando no terminal: npm start
+ 2: Colocar na url: http://localhost:3333/api-docs/
+
+
+
+
+Usuarios
+
+POST: Endpoint que cria usuarios nescessario inserir name, email 
+
+_______________________________________________
+
+PATCH: Endpoint pra fazer atualizações de dados do email ou name de usuarios já cadastrados, 
+
+___________________________________________________________
+
+GET: Endpoint pra buscar usuarios cadastrados atravez do seu id,
+ quando id não corresponde a nenhum usuario retorna um erro por 
+
+ ______________________FIM DO METODO USUARIO_________________________
+//--------------------------------------------------------------------//
+
+DADOS FINANCEIROs
+
+
+DELETE: Endpoint pra deletar uma transaação do usuario, recebe 2 ids, o userId e financialId, e deleta a transação solicitada atravez do finacialId
+
+GET) Endpoint que traz todos os usuarios e suas despesas.
+
+
+a) Endpoint que traz registro de um arquivo .xlsx, 
+
+
+
+
+
+
+C)ENDPOINT TIPO GET QUE FAZ A CONTA DAS DESPESAS
