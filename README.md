@@ -9,13 +9,20 @@ Projeto em NODE.JS pro curso DEVinHouse SENAI-SC
  Projeto em NODE.JS,  criado pra aplicar os conhecimentos ensinados em aula de backend do curso DEVinHouse do SENAI-SC
 
  ##### Passos pra testar e validar os endpoints
- 
+ ~~
  1: Faça um clone do repositorio.
+ ~~
+ ~~
  2: Iniciar com o comando no terminal:  npm install.
+ ~~
+ ~~
  3: iniciar o projeto atravez do comando no terminal: npm start.
+ ~~
+ ~~
  4: Colocar na url: http://localhost:3333/api-docs/ na aba do navegador pra documentação e testes pelo Swagger.
+ ~~
  5: Disponibilizei na pasta do projeto uma planilha "financial.xlsx" para facilitar os testes.
-
+ ~~
 
 
 
