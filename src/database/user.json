@@ -1,1 +1,5 @@
-[{"id":1,"name":"Ricardo","email":"ricardo@.com.br"},{"id":2,"name":"Erica","email":"erica@.com.br"},{"id":3,"name":"Bernardo","email":"bernardo@.com.br"},{"id":4,"name":"Benjamin","email":"benjamin@.com.br "},{"id":5,"name":"Jujuba","email":"Jujuba@.com.br"}]
+[{"id":1,"name":"Ricardo","email":"ricardo@.com.br"},
+    {"id":2,"name":"Erica","email":"erica@.com.br"},
+    {"id":3,"name":"Bernardo","email":"bernardo@.com.br"},
+    {"id":4,"name":"Benjamin","email":"benjamin@.com.br "},
+    {"id":5,"name":"Jujuba","email":"Jujuba@.com.br"}]
