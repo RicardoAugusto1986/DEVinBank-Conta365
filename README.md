@@ -21,6 +21,7 @@ Projeto em NODE.JS pro curso DEVinHouse SENAI-SC
  ~~~~
  4: Colocar na url: http://localhost:3333/api-docs/ na aba do navegador pra documentação e testes pelo Swagger.
  ~~~~
+ ~~~~
  5: Disponibilizei na pasta do projeto uma planilha "financial.xlsx" para facilitar os testes.
  ~~~~
 
