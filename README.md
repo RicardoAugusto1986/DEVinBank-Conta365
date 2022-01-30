@@ -33,12 +33,13 @@ GET: Endpoint pra buscar usuarios cadastrados atravez do seu id, quando id não 
 ~~~~
 
 FIM DO METODO USUARIO
-//--------------------------------------------------------------------//
+
 
 # DADOS FINANCEIROS
 
 ~~~
-DELETE: Endpoint pra deletar uma transaação do usuario, recebe 2 ids, o userId e financialId, e deleta a transação solicitada atravez do finacialId
+DELETE: Endpoint pra deletar uma transaação do usuario, recebe 2 ids, o userId e financialId,
+e deleta a transação solicitada atravez do finacialId
 ~~~~
 ~~~~
 GET: Endpoint que traz todos os usuarios e suas despesas.
